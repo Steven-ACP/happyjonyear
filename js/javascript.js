@@ -10,8 +10,8 @@ const random = (num) => {
 const getRandomStyles = () => {
   const top = random(100);
   const left = random(100);
-  const dur = random(10) + 10;
-  const size = random(25) + 25;
+  const dur = random(100) + 10;
+  const size = random(5000) + 25;
   return `
     top: -${top}%;
     left: ${left}%;
@@ -39,7 +39,7 @@ const removeSnow = () => {
 
 window.addEventListener("load", () => {
   createSnow(30);
-  setTimeout(removeSnow, 1000 * 60);
+  setTimeout(removeSnow, 1000 * 6000);
 });
 
 window.addEventListener("click", () => {
